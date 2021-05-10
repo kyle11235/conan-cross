@@ -1,0 +1,18 @@
+{
+ "options": [
+  [
+   "ndk:fPIC",
+   "True"
+  ],
+  [
+   "ndk:shared",
+   "False"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": "cross",
+  "channel": "testing"
+ }
+}

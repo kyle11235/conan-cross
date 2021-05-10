@@ -1,0 +1,24 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "options": "ndk:fPIC=True\nndk:shared=False",
+    "requires": [
+     "1"
+    ],
+    "path": "../../conanfile.py",
+    "context": "host"
+   },
+   "1": {
+    "ref": "ndk/0.1@cross/testing#6b950e8645983747981714e9a8f8e163",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "2fdea6ea2b74245960b940e1b1e3727157adc92c",
+    "prev": "9e15635b8ac8c8704d5b70d5593e0a39",
+    "context": "host"
+   }
+  },
+  "revisions_enabled": true
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=armv8\narch_build=x86_64\nbuild_type=Release\ncompiler=clang\ncompiler.libcxx=libc++\ncompiler.version=9\nos=Android\nos.api_level=21\nos_build=Linux\n[options]\n[build_requires]\n[env]\nAR=aarch64-linux-android-ar\nAS=aarch64-linux-android-as\nCC=aarch64-linux-android21-clang\nCHOST=aarch64-linux-android\nCONAN_CMAKE_TOOLCHAIN_FILE=/opt/android-ndk-r21e/build/cmake/android.toolchain.cmake\nCXX=aarch64-linux-android21-clang++\nLD=aarch64-linux-android-ld\nPATH=[/opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin]\nRANLIB=aarch64-linux-android-ranlib\nSTRIP=aarch64-linux-android-strip"
+}

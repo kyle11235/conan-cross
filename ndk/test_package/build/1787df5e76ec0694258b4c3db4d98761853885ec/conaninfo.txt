@@ -1,0 +1,45 @@
+[settings]
+    arch=armv8
+    build_type=Release
+    compiler=clang
+    compiler.libcxx=libc++
+    compiler.version=9
+    os=Android
+    os.api_level=21
+
+[requires]
+    ndk/0.1
+
+[options]
+
+
+[full_settings]
+    arch=armv8
+    build_type=Release
+    compiler=clang
+    compiler.libcxx=libc++
+    compiler.version=9
+    os=Android
+    os.api_level=21
+
+[full_requires]
+    ndk/0.1@cross/testing:2fdea6ea2b74245960b940e1b1e3727157adc92c
+
+[full_options]
+    ndk:fPIC=True
+    ndk:shared=False
+
+[recipe_hash]
+
+
+[env]
+    AR=aarch64-linux-android-ar
+    AS=aarch64-linux-android-as
+    CC=aarch64-linux-android21-clang
+    CHOST=aarch64-linux-android
+    CONAN_CMAKE_TOOLCHAIN_FILE=/opt/android-ndk-r21e/build/cmake/android.toolchain.cmake
+    CXX=aarch64-linux-android21-clang++
+    LD=aarch64-linux-android-ld
+    PATH=[/opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin]
+    RANLIB=aarch64-linux-android-ranlib
+    STRIP=aarch64-linux-android-strip
