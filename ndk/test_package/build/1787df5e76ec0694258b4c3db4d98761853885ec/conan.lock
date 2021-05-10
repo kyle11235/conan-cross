@@ -10,10 +10,10 @@
     "context": "host"
    },
    "1": {
-    "ref": "ndk/0.1@cross/testing#6b950e8645983747981714e9a8f8e163",
+    "ref": "ndk/0.1@cross/testing#5fde856463b134764fab87b7ee57133b",
     "options": "fPIC=True\nshared=False",
     "package_id": "2fdea6ea2b74245960b940e1b1e3727157adc92c",
-    "prev": "9e15635b8ac8c8704d5b70d5593e0a39",
+    "prev": "12084ad92b4d37a4ba3dd6dbe7df9599",
     "context": "host"
    }
   },
