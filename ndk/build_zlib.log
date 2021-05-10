@@ -1,0 +1,217 @@
+Exporting package recipe
+zlib/1.2.11 exports: File 'conandata.yml' found. Exporting it...
+zlib/1.2.11 exports: Copied 1 '.yml' file: conandata.yml
+zlib/1.2.11 exports_sources: Copied 1 '.txt' file: CMakeLists.txt
+zlib/1.2.11 exports_sources: Copied 2 '.patch' files: 0003-cmake-fix-msys2-subsystem.patch, 0002-gzguts-xcode12-compile-fix.patch
+zlib/1.2.11: The stored package has not changed
+zlib/1.2.11: Using the exported files summary hash as the recipe revision: 280f98686dda91120690d3b58806868a 
+zlib/1.2.11: Exported revision: 280f98686dda91120690d3b58806868a
+
+
+
+
+Configuration (profile_host):
+[settings]
+arch=armv8
+arch_build=x86_64
+build_type=Release
+compiler=clang
+compiler.libcxx=libc++
+compiler.version=9
+os=Android
+os.api_level=21
+os_build=Linux
+[options]
+[build_requires]
+[env]
+AR=aarch64-linux-android-ar
+AS=aarch64-linux-android-as
+CC=aarch64-linux-android21-clang
+CHOST=aarch64-linux-android
+CONAN_CMAKE_TOOLCHAIN_FILE=/opt/android-ndk-r21e/build/cmake/android.toolchain.cmake
+CXX=aarch64-linux-android21-clang++
+LD=aarch64-linux-android-ld
+PATH=[/opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin]
+RANLIB=aarch64-linux-android-ranlib
+STRIP=aarch64-linux-android-strip
+
+
+
+Configuration (profile_build):
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=4.8
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+
+
+
+
+
+zlib/1.2.11: Forced build from source
+zlib/1.2.11 (test package): Installing package
+Requirements
+    zlib/1.2.11 from 'conan-center' - Cache
+Packages
+    zlib/1.2.11:d90c6937a846904107bf4cebd7a8705bc34c61ab - Build
+
+Cross-build from 'Linux:x86_64' to 'Android:armv8'
+Installing (downloading, building) binaries...
+zlib/1.2.11: Copying sources to build folder
+zlib/1.2.11: Building your package in /root/.conan/data/zlib/1.2.11/_/_/build/d90c6937a846904107bf4cebd7a8705bc34c61ab
+zlib/1.2.11: Generator cmake created conanbuildinfo.cmake
+zlib/1.2.11: Calling build()
+-- ANDROID_PLATFORM not set. Defaulting to minimum supported version
+16.
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan CMake Wrapper
+-- Conan: called by CMake conan helper
+-- Conan: called inside local cache
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Adjusting fPIC flag (ON)
+-- Conan: Compiler Clang>=8, checking major version 9
+-- Conan: Checking correct version: 9
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of off64_t
+-- Check size of off64_t - done
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Renaming
+--     /root/.conan/data/zlib/1.2.11/_/_/build/d90c6937a846904107bf4cebd7a8705bc34c61ab/source_subfolder/zconf.h
+-- to 'zconf.h.included' because this file is included with zlib
+-- but CMake generates it automatically in the build directory.
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/.conan/data/zlib/1.2.11/_/_/build/d90c6937a846904107bf4cebd7a8705bc34c61ab/build_subfolder
+[  6%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/adler32.o
+[ 12%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/compress.o
+[ 18%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/crc32.o
+[ 25%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/deflate.o
+[ 31%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/gzclose.o
+[ 37%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/gzlib.o
+[ 43%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/gzread.o
+[ 50%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/gzwrite.o
+[ 56%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/inflate.o
+[ 62%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/infback.o
+[ 68%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/inftrees.o
+[ 75%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/inffast.o
+[ 81%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/trees.o
+[ 87%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/uncompr.o
+[ 93%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/zutil.o
+[100%] Linking C static library ../lib/libz.a
+[100%] Built target zlibstatic
+
+
+
+
+
+zlib/1.2.11: Package 'd90c6937a846904107bf4cebd7a8705bc34c61ab' built
+zlib/1.2.11: Build folder /root/.conan/data/zlib/1.2.11/_/_/build/d90c6937a846904107bf4cebd7a8705bc34c61ab
+zlib/1.2.11: Generated conaninfo.txt
+zlib/1.2.11: Generated conanbuildinfo.txt
+zlib/1.2.11: Generating the package
+zlib/1.2.11: Package folder /root/.conan/data/zlib/1.2.11/_/_/package/d90c6937a846904107bf4cebd7a8705bc34c61ab
+zlib/1.2.11: Calling package()
+zlib/1.2.11 package(): Packaged 1 file: LICENSE
+zlib/1.2.11 package(): Packaged 2 '.h' files: zconf.h, zlib.h
+zlib/1.2.11 package(): Packaged 1 '.a' file: libz.a
+zlib/1.2.11: Package 'd90c6937a846904107bf4cebd7a8705bc34c61ab' created
+zlib/1.2.11: Created package revision 84c5f9b8accb95dfaa2607697666775d
+zlib/1.2.11 (test package): Generator cmake created conanbuildinfo.cmake
+zlib/1.2.11 (test package): Generator pkg_config created zlib.pc
+zlib/1.2.11 (test package): Generator txt created conanbuildinfo.txt
+zlib/1.2.11 (test package): Generated conaninfo.txt
+zlib/1.2.11 (test package): Generated graphinfo
+Using lockfile: '/root/kyle/conan-center-index/recipes/zlib/1.2.11/test_package/build/1787df5e76ec0694258b4c3db4d98761853885ec/conan.lock'
+Using cached profile from lockfile
+
+
+
+
+
+
+
+zlib/1.2.11 (test package): Calling build()
+-- ANDROID_PLATFORM not set. Defaulting to minimum supported version
+16.
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: Adjusting output directories
+-- Conan: Using cmake targets configuration
+-- Library z found /root/.conan/data/zlib/1.2.11/_/_/package/d90c6937a846904107bf4cebd7a8705bc34c61ab/lib/libz.a
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Compiler Clang>=8, checking major version 9
+-- Conan: Checking correct version: 9
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/kyle/conan-center-index/recipes/zlib/1.2.11/test_package/build/1787df5e76ec0694258b4c3db4d98761853885ec
+[ 50%] Building C object CMakeFiles/test_zlib.dir/test.c.o
+/root/kyle/conan-center-index/recipes/zlib/1.2.11/test_package/test.c:24:41: warning: format specifies type 'unsigned long' but the argument has type 'size_t' (aka 'unsigned int') [-Wformat]
+    printf("Compressed size is: %lu\n", strlen(buffer_in));
+                                ~~~     ^~~~~~~~~~~~~~~~~
+                                %zu
+/root/kyle/conan-center-index/recipes/zlib/1.2.11/test_package/test.c:26:41: warning: format specifies type 'unsigned long' but the argument has type 'size_t' (aka 'unsigned int') [-Wformat]
+    printf("Compressed size is: %lu\n", strlen(buffer_out));
+                                ~~~     ^~~~~~~~~~~~~~~~~~
+                                %zu
+2 warnings generated.
+[100%] Linking C executable bin/test
+[100%] Built target test_zlib
+zlib/1.2.11 (test package): Running test()
