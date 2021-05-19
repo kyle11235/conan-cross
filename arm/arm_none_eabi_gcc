@@ -8,7 +8,7 @@ build_type=Release
 compiler=clang
 compiler.libcxx=libc++
 compiler.version=9
-os=none
+os=Linux
 
 [build_requires]
 
