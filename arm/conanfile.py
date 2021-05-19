@@ -21,7 +21,7 @@ class ArmConan(ConanFile):
     default_options = {"shared": False, "fPIC": True}
     generators = "cmake"
 
-    def config_options(self):
+    # def config_options(self):
         # if self.settings.os == "Windows":
         #     del self.options.fPIC
 
