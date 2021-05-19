@@ -22,8 +22,8 @@ class ArmConan(ConanFile):
     generators = "cmake"
 
     def config_options(self):
-        if self.settings.os == "Windows":
-            del self.options.fPIC
+        # if self.settings.os == "Windows":
+        #     del self.options.fPIC
 
     def source(self):
         self.run("git clone https://github.com/conan-io/hello.git")
