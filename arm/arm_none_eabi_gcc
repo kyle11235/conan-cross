@@ -23,5 +23,5 @@ CC=$target_host-gcc
 CXX=$target_host-g++
 LD=$target_host-ld
 STRIP=$target_host-strip
-CMAKE_EXE_LINKER_FLAGS_INIT=--specs=nosys.specs
+
 

@@ -32,6 +32,7 @@ class ArmConan(ConanFile):
         # properly
         tools.replace_in_file("hello/CMakeLists.txt", "PROJECT(HelloWorld)",
                               '''PROJECT(HelloWorld)
+                              set(CMAKE_EXE_LINKER_FLAGS "--specs=nosys.specs" CACHE INTERNAL "")
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()''')
 
