@@ -6,7 +6,7 @@ arm_gnu_toolchain=/opt/gcc-arm-none-eabi-9-2020-q2-update
 arch=armv7
 build_type=Release
 compiler=gcc
-compiler.libcxx=libc++
+compiler.libcxx=libstdc++
 compiler.version=9
 
 [build_requires]
