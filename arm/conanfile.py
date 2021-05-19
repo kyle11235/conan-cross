@@ -9,7 +9,14 @@ class ArmConan(ConanFile):
     url = "<Package recipe repository url here, for issues about the package>"
     description = "<Description of Arm here>"
     topics = ("<Put some tag here>", "<here>", "<and here>")
-    settings = "os", "compiler", "build_type", "arch"
+
+
+    # remove os
+    settings = "compiler", "build_type", "arch"
+
+
+
+
     options = {"shared": [True, False], "fPIC": [True, False]}
     default_options = {"shared": False, "fPIC": True}
     generators = "cmake"
