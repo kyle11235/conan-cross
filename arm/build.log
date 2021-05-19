@@ -1,0 +1,103 @@
+Exporting package recipe
+arm/0.1@cross/testing: The stored package has not changed
+arm/0.1@cross/testing: Using the exported files summary hash as the recipe revision: 061dc6ee00036c479e11d970018dc765 
+arm/0.1@cross/testing: Exported revision: 061dc6ee00036c479e11d970018dc765
+Configuration (profile_host):
+[settings]
+arch=armv7
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=9
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+AR=arm-none-eabi-ar
+AS=arm-none-eabi-as
+CC=arm-none-eabi-gcc
+CHOST=arm-none-eabi
+CXX=arm-none-eabi-g++
+LD=arm-none-eabi-ld
+PATH=[/opt/gcc-arm-none-eabi-9-2020-q2-update/bin]
+RANLIB=arm-none-eabi-ranlib
+STRIP=arm-none-eabi-strip
+Configuration (profile_build):
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=4.8
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+
+arm/0.1@cross/testing: Forced build from source
+arm/0.1@cross/testing (test package): Installing package
+Requirements
+    arm/0.1@cross/testing from 'demo-conan-local' - Cache
+Packages
+    arm/0.1@cross/testing:5548ff75fc5b306d30c5c3bbe591d24b7b99df18 - Build
+
+Cross-build from 'Linux:x86_64' to 'None:armv7'
+Installing (downloading, building) binaries...
+arm/0.1@cross/testing: WARN: Build folder is dirty, removing it: /root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18
+arm/0.1@cross/testing: Copying sources to build folder
+arm/0.1@cross/testing: Building your package in /root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18
+arm/0.1@cross/testing: Generator cmake created conanbuildinfo.cmake
+arm/0.1@cross/testing: Calling build()
+-- The C compiler identification is GNU 9.3.1
+-- The CXX compiler identification is GNU 9.3.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc
+-- Check for working C compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc - broken
+CMake Error at /opt/cmake-3.20.1-linux-x86_64/share/cmake-3.20/Modules/CMakeTestCCompiler.cmake:66 (message):
+  The C compiler
+
+    "/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_783a7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_783a7.dir/build.make CMakeFiles/cmTC_783a7.dir/build
+    gmake[1]: Entering directory `/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeTmp'
+    Building C object CMakeFiles/cmTC_783a7.dir/testCCompiler.c.obj
+    /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_783a7.dir/testCCompiler.c.obj -c /root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeTmp/testCCompiler.c
+    Linking C executable cmTC_783a7
+    /opt/cmake-3.20.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_783a7.dir/link.txt --verbose=1
+    /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc CMakeFiles/cmTC_783a7.dir/testCCompiler.c.obj -o cmTC_783a7 
+    /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+    exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+    collect2: error: ld returned 1 exit status
+    gmake[1]: *** [cmTC_783a7] Error 1
+    gmake[1]: Leaving directory `/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeTmp'
+    gmake: *** [cmTC_783a7/fast] Error 2
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:3 (PROJECT)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeOutput.log".
+See also "/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeError.log".
+arm/0.1@cross/testing: 
+arm/0.1@cross/testing: ERROR: Package '5548ff75fc5b306d30c5c3bbe591d24b7b99df18' build failed
+arm/0.1@cross/testing: WARN: Build folder /root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18
+ERROR: arm/0.1@cross/testing: Error in build() method, line 44
+        cmake.configure(source_folder="hello")
+        ConanException: Error 1 while executing cd '/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18' && cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_SYSTEM_NAME="Generic" -DCONAN_IN_LOCAL_CACHE="ON" -DCONAN_COMPILER="gcc" -DCONAN_COMPILER_VERSION="9" -DCONAN_LIBCXX="libstdc++" -DBUILD_SHARED_LIBS="OFF" -DCMAKE_INSTALL_PREFIX="/root/.conan/data/arm/0.1/cross/testing/package/5548ff75fc5b306d30c5c3bbe591d24b7b99df18" -DCMAKE_INSTALL_BINDIR="bin" -DCMAKE_INSTALL_SBINDIR="bin" -DCMAKE_INSTALL_LIBEXECDIR="bin" -DCMAKE_INSTALL_LIBDIR="lib" -DCMAKE_INSTALL_INCLUDEDIR="include" -DCMAKE_INSTALL_OLDINCLUDEDIR="include" -DCMAKE_INSTALL_DATAROOTDIR="share" -DCONAN_CMAKE_POSITION_INDEPENDENT_CODE="ON" -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY="ON" -DCONAN_EXPORTED="1" -Wno-dev '/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/hello'

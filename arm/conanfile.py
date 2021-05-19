@@ -26,13 +26,12 @@ class ArmConan(ConanFile):
         #     del self.options.fPIC
 
     def source(self):
-        self.run("git clone https://github.com/conan-io/hello.git")
+        self.run("git clone https://github.com.cnpmjs.org/conan-io/hello")
         # This small hack might be useful to guarantee proper /MT /MD linkage
         # in MSVC if the packaged project doesn't have variables to set it
         # properly
         tools.replace_in_file("hello/CMakeLists.txt", "PROJECT(HelloWorld)",
                               '''PROJECT(HelloWorld)
-                              set(CMAKE_EXE_LINKER_FLAGS "--specs=nosys.specs" CACHE INTERNAL "")
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()''')
 
