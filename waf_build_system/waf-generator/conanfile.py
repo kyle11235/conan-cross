@@ -1,7 +1,9 @@
 from conans.model import Generator
+from conans.model import Generator
+from conans import ConanFile
+
 
 class Waf(Generator):
-    
     def _remove_lib_extension(self, libs):
         return [lib[0:-4] if lib.endswith(".lib") else lib for lib in libs]
 
@@ -15,7 +17,13 @@ class Waf(Generator):
         sections.append("def configure(ctx):")
         conan_libs = []
 
-        # print to see clearly
+        # get deps - https://docs.conan.io/en/latest/reference/conanfile/attributes.html#deps-cpp-info
+        # deps is a list of package names: ["poco", "zlib", "openssl"]
+        # e.g. deps = self.deps_cpp_info.deps
+        # e.g. self.deps_cpp_info["zlib"].rootpath
+
+        # can use a template - https://docs.conan.io/en/latest/howtos/custom_generators.html
+
         for dep_name, info in self.deps_build_info.dependencies:
             if dep_name not in self.conanfile.build_requires:
                 dep_name = dep_name.replace("-", "_")
@@ -29,3 +37,11 @@ class Waf(Generator):
         sections.append("   ctx.env.CONAN_LIBS = {}".format(conan_libs))
         sections.append("")
         return "\n".join(sections)
+
+
+class WafGeneratorPackage(ConanFile):
+    name = "WafGen"
+    version = "0.1"
+    license = "MIT"
+
+
