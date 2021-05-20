@@ -1,6 +1,7 @@
 include(default)
 target_host=arm-none-eabi
 arm_gnu_toolchain=/opt/gcc-arm-none-eabi-9-2020-q2-update
+cpu=cortex-a9
 
 [settings]
 arch=armv7
@@ -8,6 +9,7 @@ build_type=Release
 compiler=gcc
 compiler.libcxx=libstdc++
 compiler.version=9
+cpu=$cpu
 
 [build_requires]
 
@@ -24,4 +26,6 @@ CXX=$target_host-g++
 LD=$target_host-ld
 STRIP=$target_host-strip
 
+CFLAGS=--specs=nosys.specs -mcpu=$cpu
+CXXFLAGS=--specs=nosys.specs -mcpu=$cpu
 

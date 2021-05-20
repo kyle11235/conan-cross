@@ -11,10 +11,8 @@ class ArmConan(ConanFile):
     topics = ("<Put some tag here>", "<here>", "<and here>")
 
 
-    # remove os
-    settings = "compiler", "build_type", "arch"
-
-
+    # remove os, add cpu
+    settings = "compiler", "build_type", "arch", "cpu"
 
 
     options = {"shared": [True, False], "fPIC": [True, False]}
@@ -36,6 +34,7 @@ include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()''')
 
     def build(self):
+
         cmake = CMake(self)
         cmake.configure(source_folder="hello")
         cmake.build()

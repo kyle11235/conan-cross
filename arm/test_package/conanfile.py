@@ -4,7 +4,9 @@ from conans import ConanFile, CMake, tools
 
 
 class ArmTestConan(ConanFile):
-    settings = "compiler", "build_type", "arch"
+
+    # remove os, add cpu
+    settings = "compiler", "build_type", "arch", "cpu"
     generators = "cmake"
 
     def build(self):

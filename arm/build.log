@@ -1,7 +1,7 @@
 Exporting package recipe
 arm/0.1@cross/testing: The stored package has not changed
-arm/0.1@cross/testing: Using the exported files summary hash as the recipe revision: 061dc6ee00036c479e11d970018dc765 
-arm/0.1@cross/testing: Exported revision: 061dc6ee00036c479e11d970018dc765
+arm/0.1@cross/testing: Using the exported files summary hash as the recipe revision: 08fca7fa8b2a0d68b14dfcc18d844b13 
+arm/0.1@cross/testing: Exported revision: 08fca7fa8b2a0d68b14dfcc18d844b13
 Configuration (profile_host):
 [settings]
 arch=armv7
@@ -54,50 +54,103 @@ arm/0.1@cross/testing: Generator cmake created conanbuildinfo.cmake
 arm/0.1@cross/testing: Calling build()
 -- The C compiler identification is GNU 9.3.1
 -- The CXX compiler identification is GNU 9.3.1
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - failed
 -- Check for working C compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc
--- Check for working C compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc - broken
-CMake Error at /opt/cmake-3.20.1-linux-x86_64/share/cmake-3.20/Modules/CMakeTestCCompiler.cmake:66 (message):
-  The C compiler
+-- Check for working C compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-g++
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-g++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: called inside local cache
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Adjusting fPIC flag (ON)
+-- Conan: Compiler GCC>=5, checking major version 9
+-- Conan: Checking correct version: 9
+-- Conan: C++ stdlib: libstdc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
 
-    "/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc"
-
-  is not able to compile a simple test program.
-
-  It fails with the following output:
-
-    Change Dir: /root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeTmp
-    
-    Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_783a7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_783a7.dir/build.make CMakeFiles/cmTC_783a7.dir/build
-    gmake[1]: Entering directory `/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeTmp'
-    Building C object CMakeFiles/cmTC_783a7.dir/testCCompiler.c.obj
-    /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_783a7.dir/testCCompiler.c.obj -c /root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeTmp/testCCompiler.c
-    Linking C executable cmTC_783a7
-    /opt/cmake-3.20.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_783a7.dir/link.txt --verbose=1
-    /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc CMakeFiles/cmTC_783a7.dir/testCCompiler.c.obj -o cmTC_783a7 
-    /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
-    exit.c:(.text.exit+0x2c): undefined reference to `_exit'
-    collect2: error: ld returned 1 exit status
-    gmake[1]: *** [cmTC_783a7] Error 1
-    gmake[1]: Leaving directory `/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeTmp'
-    gmake: *** [cmTC_783a7/fast] Error 2
-    
-    
-
-  
-
-  CMake will not be able to correctly generate this project.
-Call Stack (most recent call first):
-  CMakeLists.txt:3 (PROJECT)
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
 
 
--- Configuring incomplete, errors occurred!
-See also "/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeOutput.log".
-See also "/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/CMakeFiles/CMakeError.log".
-arm/0.1@cross/testing: 
-arm/0.1@cross/testing: ERROR: Package '5548ff75fc5b306d30c5c3bbe591d24b7b99df18' build failed
-arm/0.1@cross/testing: WARN: Build folder /root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18
-ERROR: arm/0.1@cross/testing: Error in build() method, line 44
-        cmake.configure(source_folder="hello")
-        ConanException: Error 1 while executing cd '/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18' && cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_SYSTEM_NAME="Generic" -DCONAN_IN_LOCAL_CACHE="ON" -DCONAN_COMPILER="gcc" -DCONAN_COMPILER_VERSION="9" -DCONAN_LIBCXX="libstdc++" -DBUILD_SHARED_LIBS="OFF" -DCMAKE_INSTALL_PREFIX="/root/.conan/data/arm/0.1/cross/testing/package/5548ff75fc5b306d30c5c3bbe591d24b7b99df18" -DCMAKE_INSTALL_BINDIR="bin" -DCMAKE_INSTALL_SBINDIR="bin" -DCMAKE_INSTALL_LIBEXECDIR="bin" -DCMAKE_INSTALL_LIBDIR="lib" -DCMAKE_INSTALL_INCLUDEDIR="include" -DCMAKE_INSTALL_OLDINCLUDEDIR="include" -DCMAKE_INSTALL_DATAROOTDIR="share" -DCONAN_CMAKE_POSITION_INDEPENDENT_CODE="ON" -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY="ON" -DCONAN_EXPORTED="1" -Wno-dev '/root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18/hello'
+-- Build files have been written to: /root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18
+Scanning dependencies of target hello
+[ 25%] Building CXX object CMakeFiles/hello.dir/hello.cpp.obj
+[ 50%] Linking CXX static library lib/libhello.a
+[ 50%] Built target hello
+Scanning dependencies of target greet
+[ 75%] Building CXX object CMakeFiles/greet.dir/main.cpp.obj
+[100%] Linking CXX executable bin/greet
+[100%] Built target greet
+arm/0.1@cross/testing: Package '5548ff75fc5b306d30c5c3bbe591d24b7b99df18' built
+arm/0.1@cross/testing: Build folder /root/.conan/data/arm/0.1/cross/testing/build/5548ff75fc5b306d30c5c3bbe591d24b7b99df18
+arm/0.1@cross/testing: Generated conaninfo.txt
+arm/0.1@cross/testing: Generated conanbuildinfo.txt
+arm/0.1@cross/testing: Generating the package
+arm/0.1@cross/testing: Package folder /root/.conan/data/arm/0.1/cross/testing/package/5548ff75fc5b306d30c5c3bbe591d24b7b99df18
+arm/0.1@cross/testing: Calling package()
+arm/0.1@cross/testing package(): Packaged 1 '.h' file: hello.h
+arm/0.1@cross/testing package(): Packaged 1 '.a' file: libhello.a
+arm/0.1@cross/testing: Package '5548ff75fc5b306d30c5c3bbe591d24b7b99df18' created
+arm/0.1@cross/testing: Created package revision 2a07fda065c3129bfe20688c7b4b3f16
+arm/0.1@cross/testing (test package): Generator txt created conanbuildinfo.txt
+arm/0.1@cross/testing (test package): Generator cmake created conanbuildinfo.cmake
+arm/0.1@cross/testing (test package): Generated conaninfo.txt
+arm/0.1@cross/testing (test package): Generated graphinfo
+Using lockfile: '/root/kyle/conan-cross/arm/test_package/build/189998aa80b970d7520db8bc16f64f3f3c25625e/conan.lock'
+Using cached profile from lockfile
+arm/0.1@cross/testing (test package): Calling build()
+-- The CXX compiler identification is GNU 9.3.1
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-g++
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-g++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Compiler GCC>=5, checking major version 9
+-- Conan: Checking correct version: 9
+-- Conan: C++ stdlib: libstdc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/kyle/conan-cross/arm/test_package/build/189998aa80b970d7520db8bc16f64f3f3c25625e
+Scanning dependencies of target example
+[ 50%] Building CXX object CMakeFiles/example.dir/example.cpp.obj
+[100%] Linking CXX executable bin/example
+[100%] Built target example
+arm/0.1@cross/testing (test package): Running test()
