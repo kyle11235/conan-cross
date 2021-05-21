@@ -26,7 +26,7 @@ CXX=$target_host-g++
 LD=$target_host-ld
 STRIP=$target_host-strip
 
-CFLAGS=--specs=rdimon.specs -mcpu=$cpu
-CXXFLAGS=--specs=rdimon.specs -mcpu=$cpu
+CFLAGS=-mcpu=$cpu
+CXXFLAGS=-mcpu=$cpu
 
 
