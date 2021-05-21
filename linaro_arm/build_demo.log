@@ -1,0 +1,291 @@
+Exporting package recipe
+linaro_arm/0.1@cross/testing: The stored package has not changed
+linaro_arm/0.1@cross/testing: Using the exported files summary hash as the recipe revision: a6754d9fe8bad37d385ab7f3236b1f18 
+linaro_arm/0.1@cross/testing: Exported revision: a6754d9fe8bad37d385ab7f3236b1f18
+Configuration (profile_host):
+[settings]
+arch=armv8
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=7.5
+cpu=cortex-a35
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+AR=arm-eabi-ar
+AS=arm-eabi-as
+CC=arm-eabi-gcc
+CFLAGS=-mcpu=cortex-a35
+CHOST=arm-eabi
+CXX=arm-eabi-g++
+CXXFLAGS=-mcpu=cortex-a35
+LD=arm-eabi-ld
+PATH=[/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi/bin]
+RANLIB=arm-eabi-ranlib
+STRIP=arm-eabi-strip
+Configuration (profile_build):
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=4.8
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+
+linaro_arm/0.1@cross/testing: Forced build from source
+linaro_arm/0.1@cross/testing (test package): Installing package
+Requirements
+    linaro_arm/0.1@cross/testing from local cache - Cache
+Packages
+    linaro_arm/0.1@cross/testing:ec526999e6fe691ce69d127a626c4e7ec707eea3 - Build
+
+Cross-build from 'Linux:x86_64' to 'None:armv8'
+Installing (downloading, building) binaries...
+linaro_arm/0.1@cross/testing: Copying sources to build folder
+linaro_arm/0.1@cross/testing: Building your package in /root/.conan/data/linaro_arm/0.1/cross/testing/build/ec526999e6fe691ce69d127a626c4e7ec707eea3
+linaro_arm/0.1@cross/testing: Generator cmake created conanbuildinfo.cmake
+linaro_arm/0.1@cross/testing: Calling build()
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi/bin/arm-eabi-gcc
+-- Check for working C compiler: /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi/bin/arm-eabi-gcc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi/bin/arm-eabi-g++
+-- Check for working CXX compiler: /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi/bin/arm-eabi-g++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: called inside local cache
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Adjusting fPIC flag (ON)
+-- Conan: Compiler GCC>=5, checking major version 7.5
+-- Conan: Checking correct version: 7.5
+-- Conan: C++ stdlib: libstdc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/.conan/data/linaro_arm/0.1/cross/testing/build/ec526999e6fe691ce69d127a626c4e7ec707eea3
+Scanning dependencies of target hello
+[ 25%] Building CXX object CMakeFiles/hello.dir/hello.cpp.obj
+[ 50%] Linking CXX static library lib/libhello.a
+[ 50%] Built target hello
+Scanning dependencies of target greet
+[ 75%] Building CXX object CMakeFiles/greet.dir/main.cpp.obj
+[100%] Linking CXX executable bin/greet
+[100%] Built target greet
+linaro_arm/0.1@cross/testing: Package 'ec526999e6fe691ce69d127a626c4e7ec707eea3' built
+linaro_arm/0.1@cross/testing: Build folder /root/.conan/data/linaro_arm/0.1/cross/testing/build/ec526999e6fe691ce69d127a626c4e7ec707eea3
+linaro_arm/0.1@cross/testing: Generated conaninfo.txt
+linaro_arm/0.1@cross/testing: Generated conanbuildinfo.txt
+linaro_arm/0.1@cross/testing: Generating the package
+linaro_arm/0.1@cross/testing: Package folder /root/.conan/data/linaro_arm/0.1/cross/testing/package/ec526999e6fe691ce69d127a626c4e7ec707eea3
+linaro_arm/0.1@cross/testing: Calling package()
+linaro_arm/0.1@cross/testing package(): Packaged 1 '.h' file: hello.h
+linaro_arm/0.1@cross/testing package(): Packaged 1 '.a' file: libhello.a
+linaro_arm/0.1@cross/testing: Package 'ec526999e6fe691ce69d127a626c4e7ec707eea3' created
+linaro_arm/0.1@cross/testing: Created package revision 415e935da95d8facb90a0426138abcd8
+linaro_arm/0.1@cross/testing (test package): Generator cmake created conanbuildinfo.cmake
+linaro_arm/0.1@cross/testing (test package): Generator txt created conanbuildinfo.txt
+linaro_arm/0.1@cross/testing (test package): Generated conaninfo.txt
+linaro_arm/0.1@cross/testing (test package): Generated graphinfo
+Using lockfile: '/root/kyle/conan-cross/linaro_arm/test_package/build/7de161df3cd65d7106a1147fb3383e0bb61cb5af/conan.lock'
+Using cached profile from lockfile
+linaro_arm/0.1@cross/testing (test package): Calling build()
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working CXX compiler: /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi/bin/arm-eabi-g++
+-- Check for working CXX compiler: /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi/bin/arm-eabi-g++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Compiler GCC>=5, checking major version 7.5
+-- Conan: Checking correct version: 7.5
+-- Conan: C++ stdlib: libstdc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/kyle/conan-cross/linaro_arm/test_package/build/7de161df3cd65d7106a1147fb3383e0bb61cb5af
+Scanning dependencies of target example
+[ 50%] Building CXX object CMakeFiles/example.dir/example.cpp.obj
+[100%] Linking CXX executable bin/example
+[100%] Built target example
+linaro_arm/0.1@cross/testing (test package): Running test()
+Uploading to remote 'demo-conan-local':
+Uploading linaro_arm/0.1@cross/testing to remote 'demo-conan-local'                      
+Uploaded conanfile.py -> linaro_arm/0.1@cross/testing [1.91k]                            
+Uploaded conanmanifest.txt -> linaro_arm/0.1@cross/testing [0.06k]                       
+Uploaded conan recipe 'linaro_arm/0.1@cross/testing' to 'demo-conan-local': http://182.92.214.141:8081/artifactory/api/conan/demo-conan-local
+Uploading package 1/1: ec526999e6fe691ce69d127a626c4e7ec707eea3 to 'demo-conan-local'    
+Compressing conan_package.tgz completed [2 files]                                        
+Uploaded conan_package.tgz -> linaro_arm/0.1@cross/testing:ec52 [1.54k]                  
+Uploaded conaninfo.txt -> linaro_arm/0.1@cross/testing:ec52 [0.74k]                      
+Uploaded conanmanifest.txt -> linaro_arm/0.1@cross/testing:ec52 [0.15k]                  
+Are you sure you want to delete from 'linaro_arm/0.1@cross/testing' (yes/no): yes
+Configuration:
+[settings]
+arch=armv8
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=7.5
+cpu=cortex-a35
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+AR=arm-eabi-ar
+AS=arm-eabi-as
+CC=arm-eabi-gcc
+CFLAGS=-mcpu=cortex-a35
+CHOST=arm-eabi
+CXX=arm-eabi-g++
+CXXFLAGS=-mcpu=cortex-a35
+LD=arm-eabi-ld
+PATH=[/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi/bin]
+RANLIB=arm-eabi-ranlib
+STRIP=arm-eabi-strip
+linaro_arm/0.1@cross/testing: Retrieving from server 'demo-conan-virtual' 
+linaro_arm/0.1@cross/testing: Trying with 'demo-conan-virtual'...
+Downloading conanmanifest.txt completed [0.06k]                                          
+Downloading conanfile.py completed [1.91k]                                               
+linaro_arm/0.1@cross/testing: Downloaded recipe revision a6754d9fe8bad37d385ab7f3236b1f18
+Installing package: linaro_arm/0.1@cross/testing
+Requirements
+    linaro_arm/0.1@cross/testing from 'demo-conan-virtual' - Downloaded
+Packages
+    linaro_arm/0.1@cross/testing:ec526999e6fe691ce69d127a626c4e7ec707eea3 - Download
+
+Cross-build from 'Linux:x86_64' to 'Linux:armv8'
+Installing (downloading, building) binaries...
+linaro_arm/0.1@cross/testing: Retrieving package ec526999e6fe691ce69d127a626c4e7ec707eea3 from remote 'demo-conan-virtual' 
+Downloading conanmanifest.txt completed [0.15k]                                          
+Downloading conaninfo.txt completed [0.74k]                                              
+Downloading conan_package.tgz completed [1.54k]                                          
+Decompressing conan_package.tgz completed [0.00k]                                        
+linaro_arm/0.1@cross/testing: Package installed ec526999e6fe691ce69d127a626c4e7ec707eea3
+linaro_arm/0.1@cross/testing: Downloaded package revision 415e935da95d8facb90a0426138abcd8
+Configuration:
+[settings]
+arch=armv8
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=7.5
+cpu=cortex-a35
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+AR=arm-eabi-ar
+AS=arm-eabi-as
+CC=arm-eabi-gcc
+CFLAGS=-mcpu=cortex-a35
+CHOST=arm-eabi
+CXX=arm-eabi-g++
+CXXFLAGS=-mcpu=cortex-a35
+LD=arm-eabi-ld
+PATH=[/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi/bin]
+RANLIB=arm-eabi-ranlib
+STRIP=arm-eabi-strip
+linaro_arm/0.1@cross/testing (test package): Installing package
+Requirements
+    linaro_arm/0.1@cross/testing from 'demo-conan-virtual' - Cache
+Packages
+    linaro_arm/0.1@cross/testing:ec526999e6fe691ce69d127a626c4e7ec707eea3 - Cache
+
+Cross-build from 'Linux:x86_64' to 'None:armv8'
+Installing (downloading, building) binaries...
+linaro_arm/0.1@cross/testing: Already installed!
+linaro_arm/0.1@cross/testing (test package): Generator txt created conanbuildinfo.txt
+linaro_arm/0.1@cross/testing (test package): Generator cmake created conanbuildinfo.cmake
+linaro_arm/0.1@cross/testing (test package): Generated conaninfo.txt
+linaro_arm/0.1@cross/testing (test package): Generated graphinfo
+Using lockfile: '/root/kyle/conan-cross/linaro_arm/test_package/build/7de161df3cd65d7106a1147fb3383e0bb61cb5af/conan.lock'
+Using cached profile from lockfile
+linaro_arm/0.1@cross/testing (test package): Calling build()
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working CXX compiler: /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi/bin/arm-eabi-g++
+-- Check for working CXX compiler: /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi/bin/arm-eabi-g++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Compiler GCC>=5, checking major version 7.5
+-- Conan: Checking correct version: 7.5
+-- Conan: C++ stdlib: libstdc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/kyle/conan-cross/linaro_arm/test_package/build/7de161df3cd65d7106a1147fb3383e0bb61cb5af
+Scanning dependencies of target example
+[ 50%] Building CXX object CMakeFiles/example.dir/example.cpp.obj
+[100%] Linking CXX executable bin/example
+[100%] Built target example
+linaro_arm/0.1@cross/testing (test package): Running test()

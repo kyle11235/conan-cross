@@ -1,0 +1,291 @@
+Exporting package recipe
+arm/0.1@cross/testing: The stored package has not changed
+arm/0.1@cross/testing: Using the exported files summary hash as the recipe revision: 33d45ac0704f25fac9631d9c862c8fa4 
+arm/0.1@cross/testing: Exported revision: 33d45ac0704f25fac9631d9c862c8fa4
+Configuration (profile_host):
+[settings]
+arch=armv7
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=9
+cpu=cortex-a9
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+AR=arm-none-eabi-ar
+AS=arm-none-eabi-as
+CC=arm-none-eabi-gcc
+CFLAGS=--specs=nosys.specs -mcpu=cortex-a9
+CHOST=arm-none-eabi
+CXX=arm-none-eabi-g++
+CXXFLAGS=--specs=nosys.specs -mcpu=cortex-a9
+LD=arm-none-eabi-ld
+PATH=[/opt/gcc-arm-none-eabi-9-2020-q2-update/bin]
+RANLIB=arm-none-eabi-ranlib
+STRIP=arm-none-eabi-strip
+Configuration (profile_build):
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=4.8
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+
+arm/0.1@cross/testing: Forced build from source
+arm/0.1@cross/testing (test package): Installing package
+Requirements
+    arm/0.1@cross/testing from 'demo-conan-virtual' - Cache
+Packages
+    arm/0.1@cross/testing:31dfd335c17b57863b136e24e7bb2204ccb49ca3 - Build
+
+Cross-build from 'Linux:x86_64' to 'None:armv7'
+Installing (downloading, building) binaries...
+arm/0.1@cross/testing: Copying sources to build folder
+arm/0.1@cross/testing: Building your package in /root/.conan/data/arm/0.1/cross/testing/build/31dfd335c17b57863b136e24e7bb2204ccb49ca3
+arm/0.1@cross/testing: Generator cmake created conanbuildinfo.cmake
+arm/0.1@cross/testing: Calling build()
+-- The C compiler identification is GNU 9.3.1
+-- The CXX compiler identification is GNU 9.3.1
+-- Check for working C compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc
+-- Check for working C compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-g++
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-g++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: called inside local cache
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Adjusting fPIC flag (ON)
+-- Conan: Compiler GCC>=5, checking major version 9
+-- Conan: Checking correct version: 9
+-- Conan: C++ stdlib: libstdc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/.conan/data/arm/0.1/cross/testing/build/31dfd335c17b57863b136e24e7bb2204ccb49ca3
+Scanning dependencies of target hello
+[ 25%] Building CXX object CMakeFiles/hello.dir/hello.cpp.obj
+[ 50%] Linking CXX static library lib/libhello.a
+[ 50%] Built target hello
+Scanning dependencies of target greet
+[ 75%] Building CXX object CMakeFiles/greet.dir/main.cpp.obj
+[100%] Linking CXX executable bin/greet
+[100%] Built target greet
+arm/0.1@cross/testing: Package '31dfd335c17b57863b136e24e7bb2204ccb49ca3' built
+arm/0.1@cross/testing: Build folder /root/.conan/data/arm/0.1/cross/testing/build/31dfd335c17b57863b136e24e7bb2204ccb49ca3
+arm/0.1@cross/testing: Generated conaninfo.txt
+arm/0.1@cross/testing: Generated conanbuildinfo.txt
+arm/0.1@cross/testing: Generating the package
+arm/0.1@cross/testing: Package folder /root/.conan/data/arm/0.1/cross/testing/package/31dfd335c17b57863b136e24e7bb2204ccb49ca3
+arm/0.1@cross/testing: Calling package()
+arm/0.1@cross/testing package(): Packaged 1 '.h' file: hello.h
+arm/0.1@cross/testing package(): Packaged 1 '.a' file: libhello.a
+arm/0.1@cross/testing: Package '31dfd335c17b57863b136e24e7bb2204ccb49ca3' created
+arm/0.1@cross/testing: Created package revision 0f8dd934bcc3b10f35e6ca10bc5509b6
+arm/0.1@cross/testing (test package): Generator cmake created conanbuildinfo.cmake
+arm/0.1@cross/testing (test package): Generator txt created conanbuildinfo.txt
+arm/0.1@cross/testing (test package): Generated conaninfo.txt
+arm/0.1@cross/testing (test package): Generated graphinfo
+Using lockfile: '/root/kyle/conan-cross/arm/test_package/build/5049222faec33fa4924e94e719c6b45b29022379/conan.lock'
+Using cached profile from lockfile
+arm/0.1@cross/testing (test package): Calling build()
+-- The CXX compiler identification is GNU 9.3.1
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-g++
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-g++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Compiler GCC>=5, checking major version 9
+-- Conan: Checking correct version: 9
+-- Conan: C++ stdlib: libstdc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/kyle/conan-cross/arm/test_package/build/5049222faec33fa4924e94e719c6b45b29022379
+Scanning dependencies of target example
+[ 50%] Building CXX object CMakeFiles/example.dir/example.cpp.obj
+[100%] Linking CXX executable bin/example
+[100%] Built target example
+arm/0.1@cross/testing (test package): Running test()
+Uploading to remote 'demo-conan-local':
+Uploading arm/0.1@cross/testing to remote 'demo-conan-local'                             
+Uploaded conanfile.py -> arm/0.1@cross/testing [1.90k]                                   
+Uploaded conanmanifest.txt -> arm/0.1@cross/testing [0.06k]                              
+Uploaded conan recipe 'arm/0.1@cross/testing' to 'demo-conan-local': http://182.92.214.141:8081/artifactory/api/conan/demo-conan-local
+Uploading package 1/1: 31dfd335c17b57863b136e24e7bb2204ccb49ca3 to 'demo-conan-local'    
+Compressing conan_package.tgz completed [2 files]                                        
+Uploaded conan_package.tgz -> arm/0.1@cross/testing:31df [1.57k]                         
+Uploaded conaninfo.txt -> arm/0.1@cross/testing:31df [0.80k]                             
+Uploaded conanmanifest.txt -> arm/0.1@cross/testing:31df [0.15k]                         
+Are you sure you want to delete from 'arm/0.1@cross/testing' (yes/no): yes
+Configuration:
+[settings]
+arch=armv7
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=9
+cpu=cortex-a9
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+AR=arm-none-eabi-ar
+AS=arm-none-eabi-as
+CC=arm-none-eabi-gcc
+CFLAGS=--specs=nosys.specs -mcpu=cortex-a9
+CHOST=arm-none-eabi
+CXX=arm-none-eabi-g++
+CXXFLAGS=--specs=nosys.specs -mcpu=cortex-a9
+LD=arm-none-eabi-ld
+PATH=[/opt/gcc-arm-none-eabi-9-2020-q2-update/bin]
+RANLIB=arm-none-eabi-ranlib
+STRIP=arm-none-eabi-strip
+arm/0.1@cross/testing: Retrieving from server 'demo-conan-virtual' 
+arm/0.1@cross/testing: Trying with 'demo-conan-virtual'...
+Downloading conanmanifest.txt completed [0.06k]                                          
+Downloading conanfile.py completed [1.90k]                                               
+arm/0.1@cross/testing: Downloaded recipe revision 33d45ac0704f25fac9631d9c862c8fa4
+Installing package: arm/0.1@cross/testing
+Requirements
+    arm/0.1@cross/testing from 'demo-conan-virtual' - Downloaded
+Packages
+    arm/0.1@cross/testing:31dfd335c17b57863b136e24e7bb2204ccb49ca3 - Download
+
+Cross-build from 'Linux:x86_64' to 'Linux:armv7'
+Installing (downloading, building) binaries...
+arm/0.1@cross/testing: Retrieving package 31dfd335c17b57863b136e24e7bb2204ccb49ca3 from remote 'demo-conan-virtual' 
+Downloading conanmanifest.txt completed [0.15k]                                          
+Downloading conaninfo.txt completed [0.80k]                                              
+Downloading conan_package.tgz completed [1.57k]                                          
+Decompressing conan_package.tgz completed [0.00k]                                        
+arm/0.1@cross/testing: Package installed 31dfd335c17b57863b136e24e7bb2204ccb49ca3
+arm/0.1@cross/testing: Downloaded package revision 0f8dd934bcc3b10f35e6ca10bc5509b6
+Configuration:
+[settings]
+arch=armv7
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=9
+cpu=cortex-a9
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+AR=arm-none-eabi-ar
+AS=arm-none-eabi-as
+CC=arm-none-eabi-gcc
+CFLAGS=--specs=nosys.specs -mcpu=cortex-a9
+CHOST=arm-none-eabi
+CXX=arm-none-eabi-g++
+CXXFLAGS=--specs=nosys.specs -mcpu=cortex-a9
+LD=arm-none-eabi-ld
+PATH=[/opt/gcc-arm-none-eabi-9-2020-q2-update/bin]
+RANLIB=arm-none-eabi-ranlib
+STRIP=arm-none-eabi-strip
+arm/0.1@cross/testing (test package): Installing package
+Requirements
+    arm/0.1@cross/testing from 'demo-conan-virtual' - Cache
+Packages
+    arm/0.1@cross/testing:31dfd335c17b57863b136e24e7bb2204ccb49ca3 - Cache
+
+Cross-build from 'Linux:x86_64' to 'None:armv7'
+Installing (downloading, building) binaries...
+arm/0.1@cross/testing: Already installed!
+arm/0.1@cross/testing (test package): Generator cmake created conanbuildinfo.cmake
+arm/0.1@cross/testing (test package): Generator txt created conanbuildinfo.txt
+arm/0.1@cross/testing (test package): Generated conaninfo.txt
+arm/0.1@cross/testing (test package): Generated graphinfo
+Using lockfile: '/root/kyle/conan-cross/arm/test_package/build/5049222faec33fa4924e94e719c6b45b29022379/conan.lock'
+Using cached profile from lockfile
+arm/0.1@cross/testing (test package): Calling build()
+-- The CXX compiler identification is GNU 9.3.1
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-g++
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-g++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Compiler GCC>=5, checking major version 9
+-- Conan: Checking correct version: 9
+-- Conan: C++ stdlib: libstdc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/kyle/conan-cross/arm/test_package/build/5049222faec33fa4924e94e719c6b45b29022379
+Scanning dependencies of target example
+[ 50%] Building CXX object CMakeFiles/example.dir/example.cpp.obj
+[100%] Linking CXX executable bin/example
+[100%] Built target example
+arm/0.1@cross/testing (test package): Running test()

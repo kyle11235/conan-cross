@@ -1,0 +1,313 @@
+Exporting package recipe
+ndk/0.1@cross/testing: A new conanfile.py version was exported
+ndk/0.1@cross/testing: Folder: /root/.conan/data/ndk/0.1/cross/testing/export
+ndk/0.1@cross/testing: Using the exported files summary hash as the recipe revision: 5fde856463b134764fab87b7ee57133b 
+ndk/0.1@cross/testing: Removing the local binary packages from different recipe revisions
+ndk/0.1@cross/testing: Exported revision: 5fde856463b134764fab87b7ee57133b
+
+
+
+Configuration (profile_host):
+[settings]
+arch=armv8
+arch_build=x86_64
+build_type=Release
+compiler=clang
+compiler.libcxx=libc++
+compiler.version=9
+os=Android
+os.api_level=21
+os_build=Linux
+[options]
+[build_requires]
+[env]
+AR=aarch64-linux-android-ar
+AS=aarch64-linux-android-as
+CC=aarch64-linux-android21-clang
+CHOST=aarch64-linux-android
+CONAN_CMAKE_TOOLCHAIN_FILE=/opt/android-ndk-r21e/build/cmake/android.toolchain.cmake
+CXX=aarch64-linux-android21-clang++
+LD=aarch64-linux-android-ld
+PATH=[/opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin]
+RANLIB=aarch64-linux-android-ranlib
+STRIP=aarch64-linux-android-strip
+
+
+
+
+
+Configuration (profile_build):
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=4.8
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+
+
+
+
+
+ndk/0.1@cross/testing: Forced build from source
+ndk/0.1@cross/testing (test package): Installing package
+Requirements
+    ndk/0.1@cross/testing from 'demo-conan-virtual' - Cache
+Packages
+    ndk/0.1@cross/testing:2fdea6ea2b74245960b940e1b1e3727157adc92c - Build
+
+Cross-build from 'Linux:x86_64' to 'Android:armv8'
+Installing (downloading, building) binaries...
+ndk/0.1@cross/testing: Configuring sources in /root/.conan/data/ndk/0.1/cross/testing/source
+Cloning into 'hello'...
+remote: Enumerating objects: 34, done.
+remote: Total 34 (delta 0), reused 0 (delta 0), pack-reused 34
+Unpacking objects: 100% (34/34), done.
+ndk/0.1@cross/testing: Copying sources to build folder
+ndk/0.1@cross/testing: Building your package in /root/.conan/data/ndk/0.1/cross/testing/build/2fdea6ea2b74245960b940e1b1e3727157adc92c
+ndk/0.1@cross/testing: Generator cmake created conanbuildinfo.cmake
+ndk/0.1@cross/testing: Calling build()
+-- ANDROID_PLATFORM not set. Defaulting to minimum supported version
+16.
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: called inside local cache
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Adjusting fPIC flag (ON)
+-- Conan: Compiler Clang>=8, checking major version 9
+-- Conan: Checking correct version: 9
+-- Conan: C++ stdlib: libc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/.conan/data/ndk/0.1/cross/testing/build/2fdea6ea2b74245960b940e1b1e3727157adc92c
+[ 25%] Building CXX object CMakeFiles/hello.dir/hello.cpp.o
+[ 50%] Linking CXX static library lib/libhello.a
+[ 50%] Built target hello
+[ 75%] Building CXX object CMakeFiles/greet.dir/main.cpp.o
+[100%] Linking CXX executable bin/greet
+[100%] Built target greet
+ndk/0.1@cross/testing: Package '2fdea6ea2b74245960b940e1b1e3727157adc92c' built
+ndk/0.1@cross/testing: Build folder /root/.conan/data/ndk/0.1/cross/testing/build/2fdea6ea2b74245960b940e1b1e3727157adc92c
+ndk/0.1@cross/testing: Generated conaninfo.txt
+ndk/0.1@cross/testing: Generated conanbuildinfo.txt
+ndk/0.1@cross/testing: Generating the package
+ndk/0.1@cross/testing: Package folder /root/.conan/data/ndk/0.1/cross/testing/package/2fdea6ea2b74245960b940e1b1e3727157adc92c
+ndk/0.1@cross/testing: Calling package()
+ndk/0.1@cross/testing package(): Packaged 1 '.h' file: hello.h
+ndk/0.1@cross/testing package(): Packaged 1 '.a' file: libhello.a
+ndk/0.1@cross/testing: Package '2fdea6ea2b74245960b940e1b1e3727157adc92c' created
+ndk/0.1@cross/testing: Created package revision 12084ad92b4d37a4ba3dd6dbe7df9599
+ndk/0.1@cross/testing (test package): Generator cmake created conanbuildinfo.cmake
+ndk/0.1@cross/testing (test package): Generator txt created conanbuildinfo.txt
+ndk/0.1@cross/testing (test package): Generated conaninfo.txt
+ndk/0.1@cross/testing (test package): Generated graphinfo
+Using lockfile: '/root/kyle/conan-cross/ndk/test_package/build/1787df5e76ec0694258b4c3db4d98761853885ec/conan.lock'
+Using cached profile from lockfile
+
+
+
+
+
+
+ndk/0.1@cross/testing (test package): Calling build()
+-- ANDROID_PLATFORM not set. Defaulting to minimum supported version
+16.
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Compiler Clang>=8, checking major version 9
+-- Conan: Checking correct version: 9
+-- Conan: C++ stdlib: libc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/kyle/conan-cross/ndk/test_package/build/1787df5e76ec0694258b4c3db4d98761853885ec
+[ 50%] Building CXX object CMakeFiles/example.dir/example.cpp.o
+[100%] Linking CXX executable bin/example
+[100%] Built target example
+ndk/0.1@cross/testing (test package): Running test()
+
+
+
+
+
+
+
+Uploading to remote 'demo-conan-local':
+Uploading ndk/0.1@cross/testing to remote 'demo-conan-local'                             
+Uploaded conanfile.py -> ndk/0.1@cross/testing [1.86k]                                   
+Uploaded conanmanifest.txt -> ndk/0.1@cross/testing [0.06k]                              
+Uploaded conan recipe 'ndk/0.1@cross/testing' to 'demo-conan-local': http://182.92.214.141:8081/artifactory/api/conan/demo-conan-local
+Uploading package 1/1: 2fdea6ea2b74245960b940e1b1e3727157adc92c to 'demo-conan-local'    
+Compressing conan_package.tgz completed [2 files]                                        
+Uploaded conan_package.tgz -> ndk/0.1@cross/testing:2fde [31.65k]                        
+Uploaded conaninfo.txt -> ndk/0.1@cross/testing:2fde [0.92k]                             
+Uploaded conanmanifest.txt -> ndk/0.1@cross/testing:2fde [0.15k]               
+
+
+
+
+
+
+Are you sure you want to delete from 'ndk/0.1@cross/testing' (yes/no): no
+
+
+
+
+Configuration:
+[settings]
+arch=armv8
+arch_build=x86_64
+build_type=Release
+compiler=clang
+compiler.libcxx=libc++
+compiler.version=9
+os=Android
+os.api_level=21
+os_build=Linux
+[options]
+[build_requires]
+[env]
+AR=aarch64-linux-android-ar
+AS=aarch64-linux-android-as
+CC=aarch64-linux-android21-clang
+CHOST=aarch64-linux-android
+CONAN_CMAKE_TOOLCHAIN_FILE=/opt/android-ndk-r21e/build/cmake/android.toolchain.cmake
+CXX=aarch64-linux-android21-clang++
+LD=aarch64-linux-android-ld
+PATH=[/opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin]
+RANLIB=aarch64-linux-android-ranlib
+STRIP=aarch64-linux-android-strip
+Installing package: ndk/0.1@cross/testing
+Requirements
+    ndk/0.1@cross/testing from 'demo-conan-virtual' - Cache
+Packages
+    ndk/0.1@cross/testing:2fdea6ea2b74245960b940e1b1e3727157adc92c - Cache
+
+Cross-build from 'Linux:x86_64' to 'Android:armv8'
+Installing (downloading, building) binaries...
+ndk/0.1@cross/testing: Already installed!
+Configuration:
+[settings]
+arch=armv8
+arch_build=x86_64
+build_type=Release
+compiler=clang
+compiler.libcxx=libc++
+compiler.version=9
+os=Android
+os.api_level=21
+os_build=Linux
+[options]
+[build_requires]
+[env]
+AR=aarch64-linux-android-ar
+AS=aarch64-linux-android-as
+CC=aarch64-linux-android21-clang
+CHOST=aarch64-linux-android
+CONAN_CMAKE_TOOLCHAIN_FILE=/opt/android-ndk-r21e/build/cmake/android.toolchain.cmake
+CXX=aarch64-linux-android21-clang++
+LD=aarch64-linux-android-ld
+PATH=[/opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin]
+RANLIB=aarch64-linux-android-ranlib
+STRIP=aarch64-linux-android-strip
+ndk/0.1@cross/testing (test package): Installing package
+Requirements
+    ndk/0.1@cross/testing from 'demo-conan-virtual' - Cache
+Packages
+    ndk/0.1@cross/testing:2fdea6ea2b74245960b940e1b1e3727157adc92c - Cache
+
+Cross-build from 'Linux:x86_64' to 'Android:armv8'
+Installing (downloading, building) binaries...
+ndk/0.1@cross/testing: Already installed!
+ndk/0.1@cross/testing (test package): Generator cmake created conanbuildinfo.cmake
+ndk/0.1@cross/testing (test package): Generator txt created conanbuildinfo.txt
+ndk/0.1@cross/testing (test package): Generated conaninfo.txt
+ndk/0.1@cross/testing (test package): Generated graphinfo
+Using lockfile: '/root/kyle/conan-cross/ndk/test_package/build/1787df5e76ec0694258b4c3db4d98761853885ec/conan.lock'
+Using cached profile from lockfile
+ndk/0.1@cross/testing (test package): Calling build()
+-- ANDROID_PLATFORM not set. Defaulting to minimum supported version
+16.
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/android-ndk-r21e/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Compiler Clang>=8, checking major version 9
+-- Conan: Checking correct version: 9
+-- Conan: C++ stdlib: libc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/kyle/conan-cross/ndk/test_package/build/1787df5e76ec0694258b4c3db4d98761853885ec
+[ 50%] Building CXX object CMakeFiles/example.dir/example.cpp.o
+[100%] Linking CXX executable bin/example
+[100%] Built target example
+ndk/0.1@cross/testing (test package): Running test()
