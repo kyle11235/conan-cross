@@ -97,6 +97,7 @@
         - test
 
                 cd linaro_aarch64
+                mv ./setting.yml ~/.conan/setting.yml
                 ./build.sh
 
 - gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi.tar.xz

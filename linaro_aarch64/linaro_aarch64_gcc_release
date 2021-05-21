@@ -1,6 +1,7 @@
 include(default)
 target_host=aarch64-elf
 linaro_toolchain=/opt/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-elf
+cpu=cortex-a9
 
 [settings]
 arch=armv7
@@ -8,6 +9,7 @@ build_type=Release
 compiler=gcc
 compiler.libcxx=libstdc++
 compiler.version=9
+cpu=$cpu
 
 [build_requires]
 
@@ -23,5 +25,8 @@ CC=$target_host-gcc
 CXX=$target_host-g++
 LD=$target_host-ld
 STRIP=$target_host-strip
+
+CFLAGS=--specs=nosys.specs -mcpu=$cpu
+CXXFLAGS=--specs=nosys.specs -mcpu=$cpu
 
 

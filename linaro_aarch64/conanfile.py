@@ -11,8 +11,8 @@ class ArmConan(ConanFile):
     topics = ("<Put some tag here>", "<here>", "<and here>")
 
 
-    # remove os
-    settings = "compiler", "build_type", "arch"
+    # remove os & add cpu
+    settings = "compiler", "build_type", "arch", "cpu"
 
 
     options = {"shared": [True, False], "fPIC": [True, False]}
