@@ -94,6 +94,11 @@
         
                 https://releases.linaro.org/components/toolchain/binaries/7.2-2017.11/aarch64-elf/
 
+        - test
+
+                cd linaro_aarch64
+                ./build.sh
+
 - gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi.tar.xz
 
         - install
