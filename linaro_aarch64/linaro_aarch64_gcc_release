@@ -1,10 +1,10 @@
 include(default)
 target_host=aarch64-elf
 linaro_toolchain=/opt/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-elf
-cpu=cortex-a9
+cpu=cortex-a35
 
 [settings]
-arch=armv7
+arch=armv8
 build_type=Release
 compiler=gcc
 compiler.libcxx=libstdc++
