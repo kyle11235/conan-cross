@@ -1,6 +1,6 @@
 include(default)
-target_host=aarch64-elf
-linaro_toolchain=/opt/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-elf
+target_host=arm-eabi
+linaro_toolchain=/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi
 cpu=cortex-a35
 
 [settings]
@@ -8,7 +8,7 @@ arch=armv8
 build_type=Release
 compiler=gcc
 compiler.libcxx=libstdc++
-compiler.version=7.2
+compiler.version=7.5
 cpu=$cpu
 
 [build_requires]
