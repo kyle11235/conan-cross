@@ -73,7 +73,7 @@
         - test
 
                 cd conan-cross/arm
-                mv ./setting.yml ~/.conan/setting.yml
+                mv ./settings.yml ~/.conan/settings.yml
                 ./build.sh
 
                 - error
@@ -101,14 +101,21 @@
         - test
 
                 cd linaro_aarch64
-                mv ./setting.yml ~/.conan/setting.yml
+                mv ./settings.yml ~/.conan/settings.yml
                 ./build.sh
 
-                - erro
+                - error
                 unknown value ‘cortex-a9’ for -mcpu
 
                 - fix
                 note: valid arguments are: cortex-a35 cortex-a53 cortex-a57 cortex-a72 cortex-a73 thunderx thunderxt88p1 thunderxt88 thunderxt81 thunderxt83 xgene1 falkor qdf24xx exynos-m1 thunderx2t99p1 vulcan thunderx2t99 cortex-a57.cortex-a53 cortex-a72.cortex-a53 cortex-a73.cortex-a35 cortex-a73.cortex-a53 generic; did you mean ‘cortex-a35’?
+
+                - error
+                undefined reference to `initialise_monitor_handles'
+
+                - fix
+                https://community.arm.com/developer/tools-software/tools/f/armds-forum/43925/how-to-use-aarch64-elf-gcc-to-print-hello-world
+                
 
 - gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi.tar.xz
 
