@@ -6,7 +6,7 @@
 conan create . cross/testing -pr:h ./linaro_aarch64_gcc_release -pr:b default
 
 # upload
-conan upload arm/0.1@cross/testing --all -r=demo-conan-local
+conan upload linaro_aarch64/0.1@cross/testing --all -r=demo-conan-local
 
 # test resolve
 conan remove "linaro_aarch64*"
