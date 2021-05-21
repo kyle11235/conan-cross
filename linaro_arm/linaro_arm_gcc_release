@@ -1,14 +1,14 @@
 include(default)
-target_host=arm-none-eabi
-arm_gnu_toolchain=/opt/gcc-arm-none-eabi-9-2020-q2-update
-cpu=cortex-a9
+target_host=aarch64-elf
+linaro_toolchain=/opt/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-elf
+cpu=cortex-a35
 
 [settings]
-arch=armv7
+arch=armv8
 build_type=Release
 compiler=gcc
 compiler.libcxx=libstdc++
-compiler.version=9
+compiler.version=7.2
 cpu=$cpu
 
 [build_requires]
@@ -16,7 +16,7 @@ cpu=$cpu
 [options]
 
 [env]
-PATH=[$arm_gnu_toolchain/bin]
+PATH=[$linaro_toolchain/bin]
 CHOST=$target_host
 AR=$target_host-ar
 AS=$target_host-as
@@ -26,6 +26,7 @@ CXX=$target_host-g++
 LD=$target_host-ld
 STRIP=$target_host-strip
 
-CFLAGS=--specs=nosys.specs -mcpu=$cpu
-CXXFLAGS=--specs=nosys.specs -mcpu=$cpu
+CFLAGS=--specs=rdimon.specs -mcpu=$cpu
+CXXFLAGS=--specs=rdimon.specs -mcpu=$cpu
+
 
