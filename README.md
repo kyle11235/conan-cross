@@ -123,3 +123,9 @@
         
                 https://releases.linaro.org/components/toolchain/binaries/latest-7/arm-eabi/
 
+        - test
+
+                cd linaro_arm
+                mv ./settings.yml ~/.conan/settings.yml
+                ./build.sh
+
