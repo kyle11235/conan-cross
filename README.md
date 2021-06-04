@@ -1,14 +1,13 @@
 
 # conan cross building demo
 
+- prepare env
+
+        install conan, best to finish my example http://github.com.npmjs.org/kyle11235/conan-example
+
 - arm
         
         https://zhuanlan.zhihu.com/p/50230894
-
-- prepare env
-
-        install conan, cmake, config artifactory conan repo
-        best to finish my example http://github.com.npmjs.org/kyle11235/conan-example which was tested according to the official get started guide - https://docs.conan.io/en/latest/getting_started.html
 
 - android_ndk.tar.gz
 
